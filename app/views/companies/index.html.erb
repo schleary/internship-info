@@ -1,0 +1,24 @@
+<table class="table table-bordered">
+  <tr>
+    <td><h5>Company Name</h5></td>
+    <td><h5>Languages</h5></td>
+    <td><h5>End</h5></td>
+    <td><h5>Team Size</h5></td>
+    <td><h5>Company Size</h5></td>
+    <td><h5>Number of Interns</h5></td>
+    <td><h5>Pairing</h5></td>
+    <td><h5>Salary</h5></td>
+  </tr>
+  <% @companies.each do |company| %>
+  <tr>
+    <td><%= link_to company.company_name, companies_show_path(company) %></td>
+    <td><%= company.languages %></td>
+    <td><%= company.end %></td>
+    <td><%= company.team_size %></td>
+    <td><%= company.company_size %></td>
+    <td><%= company.number_of_interns %></td>
+    <td><%= company.pairing %></td>
+    <td><%= company.salaries %></td>
+  </tr>
+  <% end %>
+</table>
