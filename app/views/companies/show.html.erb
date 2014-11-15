@@ -1,0 +1,65 @@
+<table class="table table-hover">
+  <h1> <%= @company.company_name %>  <small> <%= link_to @company.url %></small> </h1>
+  <br
+  <tr>
+    <td><h4>Languages</h4></td>
+    <td><%= @company.languages %></td>
+  </tr>
+  <tr>
+    <td><h4>End (front/back)</h4></td>
+    <td><%= @company.end %></td>
+  </tr>
+  <tr>
+    <td><h4>Team Project</h4></td>
+    <td><%= @company.team_project %></td>
+  </tr>
+  <tr>
+    <td><h4>Company Size</h4</td>
+    <td><%= @company.company_size %></td>
+  </tr>
+  <tr>
+    <td><h4>Diversity</h4</td>
+    <td><%= @company.women_diversity %></td>
+  </tr>
+  <tr>
+    <td><h4>Intern Supports</h4</td>
+    <td><%= @company.intern_supports %></td>
+  </tr>
+  <tr>
+    <td><h4>Mentor Names and Contact Info</h4</td>
+    <td><%= @company.mentor_names_and_contact_info %></td>
+  </tr>
+  <tr>
+    <td><h4>Pairing?</h4</td>
+    <td><%= @company.pairing %></td>
+  </tr>
+  <tr>
+    <td><h4>Products/Clients</h4</td>
+    <td><%= @company.product_clients %></td>
+  </tr>
+  <tr>
+    <td><h4>Perks</h4</td>
+    <td><%= @company.perks %></td>
+  </tr>
+  <tr>
+    <td><h4>Contact Info</h4</td>
+    <td><%= @company.contact %></td>
+  </tr>
+  <tr>
+    <td><h4>Salaries</h4</td>
+    <td><%= @company.salaries %></td>
+  </tr>
+  <tr>
+    <td><h4>Number of Interns</h4</td>
+    <td><%= @company.number_of_interns %></td>
+  </tr>
+</table>
+<br>
+<p>
+<%= link_to "Edit #{@company.company_name}", companies_edit_path(@company), class:"btn btn-default" %>
+<!-- <%= link_to "DELETE", companies_destroy_path(@company), class: "btn btn-danger", onclick: "myFunction(event)" %> -->
+<%= link_to "View All Companies", root_path, class:"btn btn-default" %>
+</p>
+<br>
+<br>
+<br>

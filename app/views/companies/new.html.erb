@@ -1,0 +1,76 @@
+<h1>New Company</h1>
+<br>
+<%= form_for @company, url: {action: "create"} do |company| %>
+  <div class="form-group">
+    <label>Company Name</label>
+    <%= company.text_field :company_name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>URL</label>
+    <%= company.text_field :url, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Languages</label>
+    <%= company.text_field :languages, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Perks</label>
+    <%= company.text_field :perks, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>End(front/back)</label>
+    <%= company.text_field :end, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Team/Project</label>
+    <%= company.text_field :team_project, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Team Size</label>
+    <%= company.text_field :team_size, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Company Size</label>
+    <%= company.text_field :company_size, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Diversity</label>
+    <%= company.text_field :women_diversity, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Intern Supports</label>
+    <%= company.text_field :women_diversity, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Mentor Names and Contact Info</label>
+    <%= company.text_field :mentor_names_and_contact_info, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Pairing?</label>
+    <%= company.text_field :pairing, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Products/Clients</label>
+    <%= company.text_field :product_clients, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Contact</label>
+    <%= company.text_field :contact, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Salaries</label>
+    <%= company.text_field :salaries, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Number of Interns</label>
+    <%= company.text_field :number_of_interns, class: "form-control" %>
+  </div>
+  <br>
+  <br>
+  <%= company.submit "Save", class: "btn btn-default" %>
+<% end %>
+<br>
+<br>
+<br>
+<br>

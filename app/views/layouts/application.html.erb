@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internships</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <link rel='shortcut icon' href='adaicon.png' >
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/" ><%=image_tag "adaicon.png", height: "30" %> Ada's Internships</a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><%= link_to "Add a Sponsoring Company", companies_new_path %></li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li class="active"><%= link_to "View Data Table ", companies_new_path %></li>
+        </ul> -->
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+
+  <%= yield %>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<table class="table table-hover">
+  <h2> Sponsoring Companies</h2>
+  <br
+  <% @companies.each do |company| %>
+  <tr>
+    <td><h4><%= link_to company.company_name, companies_show_path(company) %>&nbsp&nbsp <small><a href="<%= company.url %> " target="_blank" title="link anchor text"><%= company.url %></a></small></h4></td>
+    <td><%= link_to "Edit", companies_edit_path(company), class:"btn btn-default" %></td>
+    <!-- <td><%= link_to "Delete", companies_destroy_path(company), class:"btn btn-default" %></td> -->
+  </tr>
+  <% end %>
+</table>
+<br>
+<br>
+<br>
